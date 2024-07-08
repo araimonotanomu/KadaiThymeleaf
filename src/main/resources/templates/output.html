@@ -6,7 +6,7 @@
     </head>
     <body>
         <h1>Thymeleaf課題</h1>
-        <h2>出力画面</h2>
+        <h2 th:text="#{content.index02}"></h2>
         <p th:text="'入力された値は「' + ${previous} + '」です。'"></p>
         <p><a th:href="@{/input?previous={previous}(previous=${param.previous[0]})}">入力画面へ戻る</a></p>
     </body>
